@@ -8,8 +8,8 @@ export PYTHONPATH := $(PWD):$(PYTHONPATH)  # reference model
 
 VERILOG_SOURCES = $(PWD)/mkbitmanip.v
 
-TOPLEVEL := mkbitmanip        # designfile
-MODULE   := test_mkbitmanip   # testfile
+TOPLEVEL := mkbitmanip        # design
+MODULE   := test_mkbitmanip   # test
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
 

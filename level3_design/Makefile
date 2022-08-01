@@ -2,12 +2,12 @@
 
 TOPLEVEL_LANG ?= verilog
 
-PWD=$(shell pwd)
+PWD= (shell pwd)
 
 VERILOG_SOURCES = $(PWD)/               # provide your design path
 
-TOPLEVEL :=           # design file
-MODULE   :=     # test file
+TOPLEVEL :=           # design file in verilog
+MODULE   :=     # test file in verilog
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
 
